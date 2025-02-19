@@ -17,8 +17,7 @@ resource "aws_db_instance" "rds" {
 
    # Enable monitoring (CloudWatch Enhanced Monitoring)
   monitoring_interval      = 60  # Collect metrics every 60 seconds
-  monitoring_role_arn      = "arn:aws:iam::664418968609:role/rdsmonitoring"
-
+  monitoring_role_arn      = "arn:aws:iam::664418968609:role/rdds"
   # Maintenance window
   maintenance_window = "sun:04:00-sun:05:00"  # Maintenance every Sunday (UTC)
 
