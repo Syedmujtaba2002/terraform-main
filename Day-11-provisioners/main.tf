@@ -9,7 +9,7 @@ resource "aws_key_pair" "smh" {
 }
 
 resource "aws_instance" "web_server" {
-  ami                    = "ami-0d682f26195e9ec0f"
+  ami                    = "ami-00bb6a80f01f03502"
   instance_type          = "t2.micro"
   key_name      = aws_key_pair.smh.key_name
   
